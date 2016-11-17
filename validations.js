@@ -20,5 +20,8 @@
             age: 26,
             email: 'yunfengcheng2008@ 126. com'
         });
+        /*
+         * name 2~6 在set()
+         */
     });
 })();
