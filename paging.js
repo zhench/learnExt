@@ -48,3 +48,12 @@ Ext.create('Ext.grid.Panel', {
     }],
     renderTo: Ext.getBody()
 });
+store.load({
+    params: {
+        // specify params for the first page load if using paging
+        start: 0,
+        limit: myPageSize,
+        // other params
+        foo: 'bar'
+    }
+});
