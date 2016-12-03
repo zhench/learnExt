@@ -25,6 +25,16 @@
         color:#ccc;
     }
     </style>
+    <script>
+    function getElementsByClassName(node,classname){
+        if(node.getElementsByClassName){
+            //使用现有方法
+            return node.getElementsByClassName(classname);
+        } else{
+            
+        }
+    }
+    </script>
 </head>
 <body>
     <h1>What to buy</h1>
@@ -47,6 +57,8 @@
     var items=shopping.getElementsByTagName("*");
     alert(typeof document.getElementsByClassName("sale"));
     alert(document.getElementsByClassName('important sale').length);
+    var sales=shopping.getElementsByClassName("sale");
+    alert(sales.length);
     debugger;
     </script>
 </body>
